@@ -13,13 +13,14 @@ namespace QuizMahasiswa
 {
     public partial class FormMasterBarang031 : Form
     {
-        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-CIJN2E2A\SQLEXPRESS;Initial Catalog=QuizAgit;Integrated Security=True;");
+        //SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-CIJN2E2A\SQLEXPRESS;Initial Catalog=QuizAgit;Integrated Security=True;");
+        SqlConnection con = new SqlConnection(@"Data Source=WINDOWS-LD56BQV;Initial Catalog=QuizAgit;Integrated Security=True;");
+        DatabaseZulDataContext db = new DatabaseZulDataContext();
         public FormMasterBarang031()
         {
             InitializeComponent();
         }
 
-        DatabaseZulDataContext db = new DatabaseZulDataContext();
         void LoadData()
         {
             var st = from tb in db.tbl_barangs select tb;

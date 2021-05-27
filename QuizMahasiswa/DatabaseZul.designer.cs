@@ -36,7 +36,7 @@ namespace QuizMahasiswa
     #endregion
 		
 		public DatabaseZulDataContext() : 
-				base(global::QuizMahasiswa.Properties.Settings.Default.QuizAgitConnectionString, mappingSource)
+				base(global::QuizMahasiswa.Properties.Settings.Default.QuizAgitConnectionString1, mappingSource)
 		{
 			OnCreated();
 		}
@@ -131,7 +131,7 @@ namespace QuizMahasiswa
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nama_barang", DbType="NVarChar(20) NOT NULL", CanBeNull=false)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_nama_barang", DbType="VarChar(20) NOT NULL", CanBeNull=false)]
 		public string nama_barang
 		{
 			get

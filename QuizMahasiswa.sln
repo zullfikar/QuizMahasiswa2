@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.1433
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizMahasiswa", "QuizMahasiswa\QuizMahasiswa.csproj", "{6B423CC7-B395-4233-82D4-770D656273E9}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "QuizAgit", "QuizAgit\QuizAgit.vdproj", "{3BA96689-B3FF-4359-B878-67B699C66B1F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{6B423CC7-B395-4233-82D4-770D656273E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B423CC7-B395-4233-82D4-770D656273E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B423CC7-B395-4233-82D4-770D656273E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BA96689-B3FF-4359-B878-67B699C66B1F}.Debug|Any CPU.ActiveCfg = Debug
+		{3BA96689-B3FF-4359-B878-67B699C66B1F}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
