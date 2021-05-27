@@ -33,9 +33,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ExcelDataReader, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.3.6.0\lib\net45\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader.DataSet, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelDataReader.DataSet.3.6.0\lib\net35\ExcelDataReader.DataSet.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\..\MI Semester2\PRG2\Praktikum\AGIT\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\MI Semester2\PRG2\Praktikum\AGIT\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
+    <Reference Include="System.IO.Compression" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -60,6 +75,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuizAgitDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuizAgitDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportBarang019.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportBarang019.Designer.cs">
+      <DependentUpon>ReportBarang019.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormMasterBarang031.resx">
       <DependentUpon>FormMasterBarang031.cs</DependentUpon>
     </EmbeddedResource>
@@ -72,6 +98,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ReportBarang019.resx">
+      <DependentUpon>ReportBarang019.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="DatabaseZul.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>DatabaseZul.designer.cs</LastGenOutput>
@@ -80,6 +109,7 @@
     <None Include="DatabaseZul.dbml.layout">
       <DependentUpon>DatabaseZul.dbml</DependentUpon>
     </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -89,6 +119,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="QuizAgitDataSet.xsc">
+      <DependentUpon>QuizAgitDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuizAgitDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuizAgitDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuizAgitDataSet.xss">
+      <DependentUpon>QuizAgitDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

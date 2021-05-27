@@ -33,5 +33,15 @@ namespace QuizMahasiswa.Properties {
                 return ((string)(this["QuizAgitConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=WINDOWS-LD56BQV;Initial Catalog=QuizAgit;Integrated Security=True")]
+        public string QuizAgitConnectionString1 {
+            get {
+                return ((string)(this["QuizAgitConnectionString1"]));
+            }
+        }
     }
 }
